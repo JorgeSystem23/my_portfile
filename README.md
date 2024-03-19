@@ -33,7 +33,7 @@ Estoy comprometido con el aprendizaje continuo y la mejora de mis habilidades. A
 Contacto
 ¡Estoy emocionado de colaborar en nuevos proyectos y oportunidades! Si estás interesado en trabajar juntos o tienes alguna pregunta, no dudes en contactarme:
 
-Correo electrónico: correo@example.com
-LinkedIn: linkedin.com/in/tunombre
-GitHub: github.com/tunombre
+Correo electrónico: prosystem155@gmail.com
+LinkedIn: https://www.linkedin.com/in/jorge-grull%C3%B3n-289719282?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+GitHub: github.com/JorgeSystem23
 ¡Gracias por visitar mi portafolio! Espero poder contribuir a tus proyectos y desafíos de desarrollo.
