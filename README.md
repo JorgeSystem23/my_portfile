@@ -35,5 +35,5 @@ Contacto
 
 Correo electrónico: prosystem155@gmail.com
 LinkedIn: https://www.linkedin.com/in/jorge-grull%C3%B3n-289719282?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
-GitHub: github.com/JorgeSystem23
+GitHub: https://github.com/JorgeSystem23
 ¡Gracias por visitar mi portafolio! Espero poder contribuir a tus proyectos y desafíos de desarrollo.
