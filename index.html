@@ -1,122 +1,176 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jorge Luis Grullón Marroquín - Portafolio</title>
+    <title>Portafolio | Jorge Luis Grullón Marroquín</title>
     <link rel="stylesheet" href="css/index.css" />
+    <script src="js/index.js"></script>
   </head>
   <body>
     <header>
       <h1>Jorge Luis Grullón Marroquín</h1>
+      <img
+        src="assets/foto-jorge.jpeg"
+        alt="Foto de Jorge Luis Grullón Marroquín"
+      />
       <nav>
         <ul>
-          <li><a href="#about">Acerca de</a></li>
-          <li><a href="#portfolio">Portafolio</a></li>
-          <li><a href="#contact">Contacto</a></li>
+          <a href="#sobre-mi">Sobre mí</a>
+          <a href="#habilidades">Habilidades</a>
+          <a href="#portafolio">Portafolio</a>
+          <a href="#contacto">Contacto</a>
         </ul>
       </nav>
     </header>
 
-    <section id="about">
-      <div class="container">
-        <h2>Acerca de Mí</h2>
+    <main>
+      <section id="sobre-mi" class="hidden">
+        <h2>Sobre mí</h2>
         <p>
-          Estudiante universitario responsable y puntual, 26 años con
-          conocimientos indispensables para el manejo de hardware y software,
-          <br />lenguajes de programación, fundamentos en desarrollo web, manejo
-          de base de datos relacionales y no relaciones, como tambien
-          fundamentos en <br />
-          desarrollo movil.
+          Soy un desarrollador de software apasionado y dedicado, con 26 años de
+          edad y experiencia tanto en el desarrollo frontend como backend. Mi
+          trayectoria académica y profesional me ha proporcionado un sólido
+          dominio de una variedad de tecnologías y herramientas fundamentales
+          para el éxito en el campo del desarrollo de software.
           <br /><br />
-          Como profesional, estoy dispuesto a dar lo mejor de mí y puedo
-          adaptarme a cualquier proyecto o tarea que se me asigne.
-          <br />
-          Soy un desarrollador de software con un enfoque versátil en la
-          creación de aplicaciones móviles y web. Mi pasión por la tecnología me
-          ha llevado a especializarme en varias áreas clave del desarrollo,
-          incluyendo:
+          Con una formación universitaria en informática, he adquirido
+          conocimientos esenciales en el manejo de hardware y software, así como
+          un profundo entendimiento de los lenguajes de programación. Mi enfoque
+          se centra en la creación de soluciones móviles y web innovadoras que
+          satisfagan las necesidades y expectativas del usuario.
+          <br /><br />
+          Durante mis años de experiencia, he trabajado con una amplia gama de
+          tecnologías, entre las que se incluyen:
         </p>
-      </div>
-    </section>
-
-    <section id="portfolio">
-      <div class="container">
+      </section>
+      <section id="habilidades" class="hidden">
+        <h2>Habilidades</h2>
+        <ul>
+          <ul>
+            <li>
+              Node.js: He utilizado Node.js durante 4 años para desarrollar
+              aplicaciones backend escalables y eficientes.
+            </li>
+            <li>
+              Flutter (mobile y web): Como un entusiasta de Flutter, he creado
+              aplicaciones móviles y web atractivas y de alto rendimiento
+              utilizando este framework durante 3 años.
+            </li>
+            <li>
+              JavaScript: Con 5 años de experiencia en JavaScript, he
+              desarrollado aplicaciones frontend dinámicas e interactivas, así
+              como aplicaciones backend robustas.
+            </li>
+            <li>
+              PHP: Con 3 años de experiencia en PHP, he construido sistemas web
+              complejos y funcionales.
+            </li>
+            <li>
+              HTML: Con 6 años de experiencia en HTML, tengo un dominio sólido
+              en la estructura y semántica de las páginas web.
+            </li>
+            <li>
+              CSS: He trabajado con CSS durante 6 años, creando interfaces de
+              usuario atractivas y responsivas.
+            </li>
+            <li>
+              GraphQL: Con 2 años de experiencia en GraphQL, he implementado
+              APIs eficientes y flexibles para el intercambio de datos entre
+              cliente y servidor.
+            </li>
+          </ul>
+        </ul>
+      </section>
+      <section id="portafolio" class="hidden">
         <h2>Portafolio</h2>
-        <br />
-        <div class="portfolio-item">
-          <h3>Frutiapp</h3>
-          <p>
-            El proyecto "Aprende y Juega: Operaciones Básicas" es una aplicación
-            móvil educativa diseñada específicamente para niños en edad
-            preescolar y de primaria (3-10 años) que están aprendiendo conceptos
-            matemáticos básicos, como la suma, resta y multiplicación. La
-            aplicación tiene como objetivo proporcionar un entorno interactivo y
-            divertido donde los niños puedan practicar y reforzar sus
-            habilidades matemáticas de una manera lúdica y atractiva.
-          </p>
-          <img src="assets/screen_1.jpeg" alt="Frutiapp" />
-          <img src="assets/screen_2.jpeg" alt="Frutiapp" />
-        </div>
-        <div class="portfolio-item">
-          <h3>Proyecto 2</h3>
-          <img src="img/project1.jpg" alt="Proyecto 1" />
-          <p>Descripción breve del proyecto 2.</p>
-        </div>
-        <div class="portfolio-item">
-          <h3>Proyecto 3</h3>
-          <img src="img/project1.jpg" alt="Proyecto 1" />
-          <p>Descripción breve del proyecto 3.</p>
-        </div>
-        <div class="portfolio-item">
-          <h3>Proyecto 4</h3>
-          <img src="img/project1.jpg" alt="Proyecto 1" />
-          <p>Descripción breve del proyecto 4.</p>
-        </div>
-        <div class="portfolio-item">
-          <h3>Proyecto 5</h3>
-          <img src="img/project1.jpg" alt="Proyecto 1" />
-          <p>Descripción breve del proyecto 5.</p>
-        </div>
-        <div class="portfolio-item">
-          <h3>Proyecto 6</h3>
-          <img src="img/project1.jpg" alt="Proyecto 1" />
-          <p>Descripción breve del proyecto 6.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="container">
+        <ul>
+          <li>
+              <h3>Aplicación web para la gestión de tareas</h3>
+              <p>
+                Esta aplicación permite a los usuarios crear, editar y eliminar
+                tareas. También permite organizar las tareas por categorías y
+                prioridades.
+              </p>
+              <div class="portfolio-item">
+                <h3>Frutiapp</h3>
+                <p>
+                  El proyecto "FrutiApp" es una aplicación móvil educativa
+                  diseñada específicamente para niños en edad preescolar y de
+                  primaria (3-10 años) que están aprendiendo conceptos
+                  matemáticos básicos, como la suma, resta y multiplicación. La
+                  aplicación tiene como objetivo proporcionar un entorno
+                  interactivo y divertido donde los niños puedan practicar y
+                  reforzar sus habilidades matemáticas de una manera lúdica y
+                  atractiva.
+                </p>
+                <div class="carousel">
+                  <img src="assets/screen_1.jpeg" alt="Frutiapp" />
+                  <img src="assets/screen_2.jpeg" alt="Frutiapp" />
+                </div>
+              </div>
+          </li>
+          <li>
+              <h3>Aplicación móvil para la gestión de finanzas personales</h3>
+              <p>
+                Esta aplicación permite a los usuarios registrar sus ingresos y
+                gastos, así como establecer presupuestos y metas financieras.
+              </p>
+          </li>
+          <li>
+              <h3>Sitio web para una empresa de turismo</h3>
+              <p>
+                Este sitio web permite a los usuarios reservar tours y
+                actividades, así como obtener información sobre los diferentes
+                destinos turísticos.
+              </p>
+          </li>
+        </ul>
+      </section>
+      <section id="contacto" class="hidden">
         <h2>Contacto</h2>
         <p>
-          Correo Electronico:
-          <a href="mailto:prosystem155@gmail.com">prosystem155@gmail.com</a
-          ><br />
-          LinkedIn:
-          <a
-            href="https://www.linkedin.com/in/jorge-grull%C3%B3n-289719282?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-            >LinkedIn</a
-          ><br />
-          Facebook:
-          <a href="https://www.facebook.com/ProSystem2020?mibextid=ZbWKwL"
-            >ProSystem - Facebook</a
-          >
-          <br />
-          Instagram:
-          <a
-            href="https://www.instagram.com/jorge_grullon98?utm_source=qr&igsh=YWU3eG1qcnJ5Y3Bshttps://www.instagram.com/jorge_grullon98?utm_source=qr&igsh=YWU3eG1qcnJ5Y3Bs"
-            >Instagram - Personal</a
-          >
-          <br />
-          Whatsapp: <a href="https://wa.me/qr/XLKRVCNR6LCAO1">Pro-System</a
-          ><br />
+          Si tienes alguna pregunta o deseas contactarme para un proyecto,
+          puedes hacerlo a través de los siguientes medios:
         </p>
-      </div>
-    </section>
-
+        <ul>
+          <div class="social-icons">
+            <i class="fa fa-envelope">
+              Correo Electronico:
+              <a href="mailto:prosystem155@gmail.com"
+                >prosystem155@gmail.com</a
+              ></i
+            ><br />
+            <i class="fab fa-linkedin">
+              LinkedIn:
+              <a
+                href="https://www.linkedin.com/in/jorge-grull%C3%B3n-289719282?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                >LinkedIn</a
+              ></i
+            ><br />
+            <i class="fab fa-facebook">
+              Facebook:
+              <a href="https://www.facebook.com/ProSystem2020?mibextid=ZbWKwL"
+                >ProSystem - Facebook</a
+              ></i
+            ><br />
+            <i class="fab fa-instagram">
+              Instagram:
+              <a
+                href="https://www.instagram.com/jorge_grullon98?utm_source=qr&igsh=YWU3eG1qcnJ5Y3Bshttps://www.instagram.com/jorge_grullon98?utm_source=qr&igsh=YWU3eG1qcnJ5Y3Bs"
+                >Instagram - Personal</a
+              ></i
+            ><br />
+            <i class="fab fa-whatsapp">
+              Whatsapp:
+              <a href="https://wa.me/qr/XLKRVCNR6LCAO1">Pro-System</a></i
+            ><br />
+          </div>
+        </ul>
+      </section>
+    </main>
     <footer>
-      <p>&copy; 2024 Jorge Luis Grullón Marroquín</p>
+      <p>Copyright &copy; 2024 Jorge Luis Grullón Marroquín</p>
     </footer>
   </body>
 </html>

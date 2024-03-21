@@ -1,45 +1,106 @@
-/* Reset de estilos */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+main {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
 header {
-    background-color: #4d9c20;
-    color: #ffffff;
-    padding: 20px 0;
-    text-align: center;
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 1fr auto;
 }
 
-header nav ul {
-    list-style-type: none;
+header h1 {
+  margin: 0;
+  font-size: 42px;
+  padding: 50;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  float: left;
 }
 
-header nav ul li {
-    display: inline;
-    margin-right: 20px;
+header img {
+  width: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  float: right;
 }
 
 section {
-    padding: 50px 0;
-    text-align: center;
+  margin-bottom: 20px;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
+.hidden {
+  display: none;
+}
+
+section h2 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.sobre-mi p {
+  text-align: justify;
+}
+
+.habilidades ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.habilidades ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Agrega una regla de transición para suavizar los cambios */
+.carousel {
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.carousel-item {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Muestra la imagen actual */
+.carousel-item.active {
+  display: block;
+  opacity: 1;
+}
+
+/* Navegacion */
+nav a {
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #000;
+  background-color: #ddd;
 }
