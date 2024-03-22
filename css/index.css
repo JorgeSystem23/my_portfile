@@ -178,11 +178,6 @@ button:hover {
   background-color: #0069d9;
 }
 
-/* Icono de avión */
-.fa-paper-plane {
-  margin-right: 10px;
-}
-
 button:hover .overlay {
   opacity: 1;
 }

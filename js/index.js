@@ -13,26 +13,28 @@ function goToBeginning() {
   window.scrollTo(0, 0);
 }
 
-const skillBars = document.querySelectorAll(".barra-skill");
+function downloadFile() {
+  const downloadButton = document.getElementById("downloadCurriculum");
 
-skillBars.forEach((skillBar) => {
-  const progreso = skillBar.querySelector(".progreso");
-  const progresoInterno = progreso.querySelector(".progreso-interno");
-  const percentageSpan = progreso.querySelector(".porcent");
+  downloadButton.addEventListener("click", function () {
+    const pdfPath = "../files/CV Jorge Luis Grullón Marroquín 06_03_2024 19_55_00.pdf";
 
-  const percentage = parseInt(percentageSpan.textContent.replace("%", ""));
-
-  progresoInterno.style.width = `${percentage}%`;
-  progreso.style.setProperty("--progress-color", percentageSpan.textContent);
-});
+    const link = document.createElement("a");
+    link.href = pdfPath;
+    link.download = "CV-Jorge Luis Grullón Marroquín.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  });
+}
 
 document.addEventListener("DOMContentLoaded", () => {
-  const progressBars = document.querySelectorAll('.barra-skill .progreso');
+  const progressBars = document.querySelectorAll(".barra-skill .progreso");
 
-  progressBars.forEach(bar => {
-    const percentage = bar.getAttribute('data-percentage');
-    const innerBar = bar.querySelector('.progreso-interno');
-    innerBar.style.setProperty('--progress-width', `${percentage}%`);
+  progressBars.forEach((bar) => {
+    const percentage = bar.getAttribute("data-percentage");
+    const innerBar = bar.querySelector(".progreso-interno");
+    innerBar.style.setProperty("--progress-width", `${percentage}%`);
 
     let color;
     if (percentage < 25) {
@@ -46,6 +48,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     bar.style.setProperty("--progress-color", color);
   });
+
+  document
+    .getElementById("downloadCurriculum")
+    .addEventListener("click", downloadFile);
 
   document
     .querySelector(".boton-actualizar")
