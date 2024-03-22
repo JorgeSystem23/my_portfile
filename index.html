@@ -3,174 +3,264 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portafolio | Jorge Luis Grullón Marroquín</title>
+    <title>Jorge Luis Grullón Marroquín</title>
     <link rel="stylesheet" href="css/index.css" />
-    <script src="js/index.js"></script>
   </head>
   <body>
     <header>
-      <h1>Jorge Luis Grullón Marroquín</h1>
-      <img
-        src="assets/foto-jorge.jpeg"
-        alt="Foto de Jorge Luis Grullón Marroquín"
-      />
+      <div id="logo">Jorge</div>
       <nav>
         <ul>
-          <a href="#sobre-mi">Sobre mí</a>
-          <a href="#habilidades">Habilidades</a>
-          <a href="#portafolio">Portafolio</a>
-          <a href="#contacto">Contacto</a>
+          <li><a href="#inicio">INICIO</a></li>
+          <li><a href="#sobre-mi">SOBRE MI</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#curriculum">CURRÍCULUM</a></li>
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#contacto">CONTACTO</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section id="sobre-mi" class="hidden">
-        <h2>Sobre mí</h2>
-        <p>
-          Soy un desarrollador de software apasionado y dedicado, con 26 años de
-          edad y experiencia tanto en el desarrollo frontend como backend. Mi
-          trayectoria académica y profesional me ha proporcionado un sólido
-          dominio de una variedad de tecnologías y herramientas fundamentales
-          para el éxito en el campo del desarrollo de software.
-          <br /><br />
-          Con una formación universitaria en informática, he adquirido
-          conocimientos esenciales en el manejo de hardware y software, así como
-          un profundo entendimiento de los lenguajes de programación. Mi enfoque
-          se centra en la creación de soluciones móviles y web innovadoras que
-          satisfagan las necesidades y expectativas del usuario.
-          <br /><br />
-          Durante mis años de experiencia, he trabajado con una amplia gama de
-          tecnologías, entre las que se incluyen:
-        </p>
+      <section id="inicio">
+        <img src="assets/foto-jorge.jpeg" alt="" style="width: 600px; height: 800px"/>
+        <h1>Jorge Grullón</h1>
+        <h2>Desarrollador de Software</h2>
+        <div class="social-media-icons">
+          <a href="https://wa.me/qr/XLKRVCNR6LCAO1" target="_blank"
+            ><img src="assets/whatsapp.png" alt="WhatsApp" style="width: 40px; height: 40px"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/jorge-grull%C3%B3n-289719282?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+            ><img src="assets/linkedin.jpeg" alt="LinkedIn" style="width: 35px; height: 35px"
+          /></a>
+          <a
+            href="https://www.facebook.com/share/jAVvopraGfLTRwfL/?mibextid=qi2Omg"
+            target="_blank"
+            ><img src="assets/facebook.png" alt="Facebook" style="width: 30px; height: 30px"
+          /></a>
+          <a href="https://x.com/JorgeLuisGM8?t=ZptzB3KFZoXaxDmzKlr6Ng&s=08" target="_blank"
+            ><img src="assets/twitter.webp" alt="Twitter" style="width: 30px; height: 30px"
+          /></a>
+          <a
+            href="https://www.instagram.com/jorge_grullon98?utm_source=qr&igsh=YWU3eG1qcnJ5Y3Bs"
+            target="_blank"
+            ><img src="assets/instagram.png" alt="Instagram" style="width: 30px; height: 30px"
+          /></a>
+          <a href="https://youtube.com/@ingenieriachapina6283?feature=shared" target="_blank"
+            ><img src="assets/youtube.png" alt="YouTube" style="width: 30px; height: 30px"
+          /></a>
+        </div>
       </section>
-      <section id="habilidades" class="hidden">
-        <h2>Habilidades</h2>
-        <ul>
-          <ul>
-            <li>
-              Node.js: He utilizado Node.js durante 4 años para desarrollar
-              aplicaciones backend escalables y eficientes.
-            </li>
-            <li>
-              Flutter (mobile y web): Como un entusiasta de Flutter, he creado
-              aplicaciones móviles y web atractivas y de alto rendimiento
-              utilizando este framework durante 3 años.
-            </li>
-            <li>
-              JavaScript: Con 5 años de experiencia en JavaScript, he
-              desarrollado aplicaciones frontend dinámicas e interactivas, así
-              como aplicaciones backend robustas.
-            </li>
-            <li>
-              PHP: Con 3 años de experiencia en PHP, he construido sistemas web
-              complejos y funcionales.
-            </li>
-            <li>
-              HTML: Con 6 años de experiencia en HTML, tengo un dominio sólido
-              en la estructura y semántica de las páginas web.
-            </li>
-            <li>
-              CSS: He trabajado con CSS durante 6 años, creando interfaces de
-              usuario atractivas y responsivas.
-            </li>
-            <li>
-              GraphQL: Con 2 años de experiencia en GraphQL, he implementado
-              APIs eficientes y flexibles para el intercambio de datos entre
-              cliente y servidor.
-            </li>
-          </ul>
-        </ul>
-      </section>
-      <section id="portafolio" class="hidden">
-        <h2>Portafolio</h2>
-        <ul>
-          <li>
-              <h3>Aplicación web para la gestión de tareas</h3>
-              <p>
-                Esta aplicación permite a los usuarios crear, editar y eliminar
-                tareas. También permite organizar las tareas por categorías y
-                prioridades.
-              </p>
-              <div class="portfolio-item">
-                <h3>Frutiapp</h3>
-                <p>
-                  El proyecto "FrutiApp" es una aplicación móvil educativa
-                  diseñada específicamente para niños en edad preescolar y de
-                  primaria (3-10 años) que están aprendiendo conceptos
-                  matemáticos básicos, como la suma, resta y multiplicación. La
-                  aplicación tiene como objetivo proporcionar un entorno
-                  interactivo y divertido donde los niños puedan practicar y
-                  reforzar sus habilidades matemáticas de una manera lúdica y
-                  atractiva.
-                </p>
-                <div class="carousel">
-                  <img src="assets/screen_1.jpeg" alt="Frutiapp" />
-                  <img src="assets/screen_2.jpeg" alt="Frutiapp" />
+
+      <!-- Skills -->
+      <section id="skills">
+        <h3>Skills</h3>
+        <div class="skill-set">
+              <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                  <h3>Technical Skills</h3>
+                  <div class="skill">
+                    <span>Javascript</span>
+                    <div class="barra-skill">
+                      <div class="progreso">
+                        <span>75%</span>
+                      </div>
+                    </div>
+                    <span>Flutter</span>
+                    <div class="barra-skill">
+                      <div class="progreso">
+                        <span>85%</span>
+                      </div>
+                    </div>
+                    <span>Dart</span>
+                    <div class="barra-skill">
+                      <div class="progreso">
+                        <span>85%</span>
+                      </div>
+                    </div>
+                    <span>GraphQL</span>
+                    <div class="barra-skill">
+                      <div class="progreso">
+                        <span>80%</span>
+                      </div>
+                    </div>
+                    <span>Cloud Functions</span>
+                    <div class="barra-skill">
+                      <div class="progreso">
+                        <span>55%</span>
+                      </div>
+                    </div>
+                    <span>Node.js</span>
+                    <div class="barra-skill">
+                      <div class="progreso">
+                        <span>85%</span>
+                      </div>
+                    </div>
+                    <span>Apollo Server</span>
+                    <div class="barra-skill">
+                      <div class="progreso">
+                        <span>65%</span>
+                      </div>
+                    </div>
+                    <span>Prisma</span>
+                    <div class="barra-skill">
+                      <div class="progreso">
+                        <span>65%</span>
+                      </div>
+                    </div>
+                    <span>Scrum</span>
+                    <div class="barra-skill">
+                      <div class="progreso">
+                        <span>100%</span>
+                      </div>
+                    </div>
+                    <span>Owasp</span>
+                    <div class="barra-skill">
+                      <div class="progreso">
+                        <span>60%</span>
+                      </div>
+                    </div>
+                    <span>PostgreSQL</span>
+                    <div class="barra-skill">
+                      <div class="progreso">
+                        <span>80%</span>
+                      </div>
+                    </div>
+                    <span>MySQL</span>
+                    <div class="barra-skill">
+                      <div class="progreso">
+                        <span>65%</span>
+                      </div>
+                    </div>
+                    <span>Oracle</span>
+                    <div class="barra-skill">
+                      <div class="progreso">
+                        <span>65%</span>
+                      </div>
+                    </div>
+                    <span>Git y Github</span>
+                    <div class="barra-skill">
+                      <div class="progreso">
+                        <span>100%</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-          </li>
-          <li>
-              <h3>Aplicación móvil para la gestión de finanzas personales</h3>
-              <p>
-                Esta aplicación permite a los usuarios registrar sus ingresos y
-                gastos, así como establecer presupuestos y metas financieras.
-              </p>
-          </li>
-          <li>
-              <h3>Sitio web para una empresa de turismo</h3>
-              <p>
-                Este sitio web permite a los usuarios reservar tours y
-                actividades, así como obtener información sobre los diferentes
-                destinos turísticos.
-              </p>
-          </li>
-        </ul>
+            </div>
+          </section>
+        </div>
       </section>
-      <section id="contacto" class="hidden">
-        <h2>Contacto</h2>
-        <p>
-          Si tienes alguna pregunta o deseas contactarme para un proyecto,
-          puedes hacerlo a través de los siguientes medios:
-        </p>
-        <ul>
-          <div class="social-icons">
-            <i class="fa fa-envelope">
-              Correo Electronico:
-              <a href="mailto:prosystem155@gmail.com"
-                >prosystem155@gmail.com</a
-              ></i
-            ><br />
-            <i class="fab fa-linkedin">
-              LinkedIn:
-              <a
-                href="https://www.linkedin.com/in/jorge-grull%C3%B3n-289719282?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                >LinkedIn</a
-              ></i
-            ><br />
-            <i class="fab fa-facebook">
-              Facebook:
-              <a href="https://www.facebook.com/ProSystem2020?mibextid=ZbWKwL"
-                >ProSystem - Facebook</a
-              ></i
-            ><br />
-            <i class="fab fa-instagram">
-              Instagram:
-              <a
-                href="https://www.instagram.com/jorge_grullon98?utm_source=qr&igsh=YWU3eG1qcnJ5Y3Bshttps://www.instagram.com/jorge_grullon98?utm_source=qr&igsh=YWU3eG1qcnJ5Y3Bs"
-                >Instagram - Personal</a
-              ></i
-            ><br />
-            <i class="fab fa-whatsapp">
-              Whatsapp:
-              <a href="https://wa.me/qr/XLKRVCNR6LCAO1">Pro-System</a></i
-            ><br />
+      <!-- Más secciones según sea necesario -->
+      <!-- SOBRE MI -->
+      <section id="sobre-mi" class="sobre-mi">
+        <div class="contenido-seccion">
+          <h3>Sobre Mí</h3>
+            <p>
+              <span>Hola, soy Jorge Luis Grullón Marroquín</span><br />
+              Estudiante universitario responsable y puntual, 26 años con
+              conocimientos indispensables para el manejo de hardware y software,
+              <br />lenguajes de programación, fundamentos en desarrollo web,
+              manejo de base de datos relacionales y no relaciones, como tambien
+              fundamentos en <br />
+              desarrollo movil.
+              <br /><br />
+              Como profesional, estoy dispuesto a dar lo mejor de mí y puedo
+              adaptarme a cualquier proyecto o tarea que se me asigne.
+              <br />
+              Soy un desarrollador de software con un enfoque versátil en la
+              creación de aplicaciones móviles y web. Mi pasión por la tecnología
+              me ha llevado a especializarme en varias áreas clave del desarrollo,
+              incluyendo:
+            </p>
+        </div>
+      </section>
+
+      <!-- CURRICULUM -->
+      <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+          <h3>Curriculum</h3>
+            <button>
+              Descargar
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+        </div>
+      </section>
+
+      <!-- Portafolio -->
+      <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+          <h3>Portafolio</h3>
+          <div class="galeria">
+            <img src="assets/screen_1.jpeg" alt="" />
+            <div class="proyecto">
+                <h4>Aprende y Juega</h4>
+                <p>
+                  El proyecto "Aprende y Juega: Operaciones Básicas" es una
+                  aplicación móvil educativa diseñada específicamente para niños
+                  en edad preescolar y de primaria (3-10 años) que están
+                  aprendiendo conceptos matemáticos básicos, como la suma, resta
+                  y multiplicación. La aplicación tiene como objetivo
+                  proporcionar un entorno interactivo y divertido donde los
+                  niños puedan practicar y reforzar sus habilidades matemáticas
+                  de una manera lúdica y atractiva.
+                </p>
+            </div>
           </div>
-        </ul>
+        </div>
+      </section>
+
+      <!-- Contacto -->
+      <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+          <h3>CONTACTO</h3>
+          <div class="fila">
+            <!-- Formulario -->
+            <div id="for" class="col">
+              <label for="nombre">Tu nombre: </label>
+              <input type="text" id="nombre" placeholder="Ingrese nombre" />
+              <br />
+              <label for="nombre">Numero Telefonico: </label>
+              <input
+                type="number"
+                id="telefono"
+                placeholder="Ingrese Número Telefonico"
+              />
+              <br />
+              <label for="nombre">Direccion de Correo: </label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Ingrese Dirección De Correo"
+              />
+              <br />
+              <label for="nombre">Tema: </label>
+              <input type="text" id="tema" placeholder="Ingrese El Tema" />
+              <br />
+              <label for="nombre">Mensaje: </label>
+              <textarea
+                name=""
+                id="mensaje"
+                cols="30"
+                rows="10"
+                placeholder="Mensaje"
+              ></textarea
+              ><br />
+              <button type="submit">
+                Enviar Mensaje
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
+
     <footer>
-      <p>Copyright &copy; 2024 Jorge Luis Grullón Marroquín</p>
+      <p>&copy; 2024 Jorge Grullón</p>
     </footer>
   </body>
 </html>

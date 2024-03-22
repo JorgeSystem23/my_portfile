@@ -1,106 +1,178 @@
+/* Estilos generales */
 body {
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-}
-
-main {
-  margin: 0;
-  padding: 0;
-}
-
-main {
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
+  background-color: #f4f4f4;
 }
 
 header {
-  background-color: #222;
+  background-color: blue;
   color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  box-shadow: none;
+}
+
+nav ul {
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contenido-seccion {
+  text-align: center;
+}
+
+.proyecto {
+  text-align: center;
+  font-size: larger;
+  padding: 85px;
+  font-size: x-large;
+}
+
+/* Estilos del área principal */
+#inicio {
+  text-align: center;
+  padding: 50px 0;
+}
+
+#inicio img {
+  border-radius: 75%;
+  margin: 20px 0;
+  box-shadow: none;
+}
+
+#inicio h1 {
+  font-size: 2.5em;
+  color: #333;
+}
+
+#inicio h2 {
+  font-size: 1.5em;
+  color: #555;
+}
+
+.social-media-icons {
+  margin: 5px 0;
+  height: 105;
+  width: 105;
+}
+
+/* Estilos de la sección de habilidades */
+#skills {
+  background-color: #eaeaea;
   padding: 20px;
   text-align: center;
-  display: grid;
-  justify-content: space-between;
-  grid-template-columns: 1fr auto;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 42px;
-  padding: 50;
+.skill-set {
   display: flex;
-  justify-content: space-between;
-  text-align: center;
-  float: left;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-header img {
-  width: 100px;
-  border-radius: 50%;
+.skill-set > div {
+  width: 30%;
+  margin: 10px 0;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Fila */
+.fila {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Formulario */
+#for {
+  width: 100%;
+  max-width: 600px;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  float: right;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
 }
 
-section {
+/* Campos de texto */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
   margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
 }
 
-.hidden {
-  display: none;
+/* Mensaje */
+textarea {
+  height: 150px;
 }
 
-section h2 {
-  margin-top: 0;
+/* Botón de envío */
+button {
+  background-color: #007bff;
+  color: #fff;
   font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.sobre-mi p {
-  text-align: justify;
+button:hover {
+  background-color: #0069d9;
 }
 
-.habilidades ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.habilidades ul li {
-  display: inline-block;
+/* Icono de avión */
+.fa-paper-plane {
   margin-right: 10px;
 }
 
-/* Agrega una regla de transición para suavizar los cambios */
-.carousel {
-  width: 500px;
-  height: 300px;
-  overflow: hidden;
-}
-
-.carousel-item {
-  display: none;
+/* Overlay */
+.overlay {
   position: absolute;
-  left: 0;
   top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  transition: 0.3s;
 }
 
-/* Muestra la imagen actual */
-.carousel-item.active {
-  display: block;
+button:hover .overlay {
   opacity: 1;
 }
 
-/* Navegacion */
-nav a {
-  color: #fff;
-  transition: all 0.3s ease-in-out;
+/* Media queries */
+@media (max-width: 768px) {
+  #for {
+    width: 100%;
+  }
 }
 
-nav a:hover {
-  color: #000;
-  background-color: #ddd;
+/* Estilos del footer */
+footer {
+  background-color: #1e2326;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
 }
