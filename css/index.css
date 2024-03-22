@@ -3,7 +3,10 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-image: url('../assets/desarrollo.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 header {
@@ -32,6 +35,9 @@ nav ul li a {
 
 .contenido-seccion {
   text-align: center;
+  text-decoration: solid;
+  text-decoration-style: double;
+  color: #fff;
 }
 
 .proyecto {
@@ -48,19 +54,19 @@ nav ul li a {
 }
 
 #inicio img {
-  border-radius: 75%;
+  border-radius: 100%;
   margin: 20px 0;
   box-shadow: none;
 }
 
 #inicio h1 {
   font-size: 2.5em;
-  color: #333;
+  color: #fff;
 }
 
 #inicio h2 {
   font-size: 1.5em;
-  color: #555;
+  color: #fff;
 }
 
 .social-media-icons {
@@ -71,7 +77,6 @@ nav ul li a {
 
 /* Estilos de la sección de habilidades */
 #skills {
-  background-color: #eaeaea;
   padding: 20px;
   text-align: center;
 }
@@ -144,18 +149,6 @@ button:hover {
 /* Icono de avión */
 .fa-paper-plane {
   margin-right: 10px;
-}
-
-/* Overlay */
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  transition: 0.3s;
 }
 
 button:hover .overlay {
