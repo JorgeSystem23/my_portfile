@@ -1,9 +1,15 @@
 /* Estilos generales */
+@media (max-width: 768px) {
+  img {
+    width: 100%;
+  }
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url('../assets/desarrollo.png');
+  background-image: url("../assets/desarrollo.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -17,6 +23,7 @@ header {
   box-shadow: none;
 }
 
+/* Estilo de la barra de navegación */
 nav ul {
   padding: 0;
   list-style: none;
@@ -85,6 +92,7 @@ nav ul li a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  text-align: center;
 }
 
 .skill-set > div {
@@ -93,11 +101,35 @@ nav ul li a {
   background-color: #fff;
   padding: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 0 auto;  /* Added to center horizontally */
+}
+
+/* Target the progreso element within each barra-skill */
+.barra-skill .progreso {
+  --progress-color: #007bff;
+  --progress-width: 0%;
+}
+
+.barra-skill .progreso .progreso-interno {
+  background: linear-gradient(to right, var(--progress-color) var(--progress-width), #fff var(--progress-width));
+  transition: width 1s ease-in-out;
+  width: var(--progress-width); 
+}
+
+.barra-skill .progreso span {
+  display: inline-block;
+  font-size: 0.8rem;
+  margin-right: 5px;
+}
+
+.barra-skill .progreso {
+  --progress-color: #007bff; 
 }
 
 /* Fila */
 .fila {
-  display: flex;
+  display: inline;
   flex-wrap: wrap;
 }
 
@@ -153,13 +185,6 @@ button:hover {
 
 button:hover .overlay {
   opacity: 1;
-}
-
-/* Media queries */
-@media (max-width: 768px) {
-  #for {
-    width: 100%;
-  }
 }
 
 /* Estilos del footer */

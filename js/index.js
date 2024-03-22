@@ -1,38 +1,52 @@
-// JavaScript para el proyecto HTML
-
-// Función para seleccionar un enlace del menú
 function select() {
-  // Aquí puedes agregar el código para manejar la selección del enlace del menú
-  // Por ejemplo, podrías resaltar el enlace seleccionado o desplazarte suavemente a la sección correspondiente
-  // Aquí te muestro un ejemplo de desplazamiento suave hacia la sección correspondiente
-  const enlace = event.target.getAttribute("href"); // Obtener el href del enlace seleccionado
-  const seccion = document.querySelector(enlace); // Seleccionar la sección correspondiente
-  seccion.scrollIntoView({ behavior: "smooth" }); // Desplazar suavemente hacia la sección
+  const enlace = event.target.getAttribute("href");
+  const seccion = document.querySelector(enlace);
+  seccion.scrollIntoView({ behavior: "smooth" });
 }
 
-// Función para ocultar el menú en dispositivos móviles
 function hideMenu() {
-  // Aquí puedes agregar el código para ocultar el menú cuando se hace clic en el ícono de menú en dispositivos móviles
-  // Por ejemplo, podrías ocultar el menú al hacer clic en el ícono de menú
-  const nav = document.getElementById("nav"); // Seleccionar el menú de navegación
-  nav.classList.toggle("activo"); // Alternar la clase 'activo' para ocultar o mostrar el menú
+  const nav = document.getElementById("nav");
+  nav.classList.toggle("activo");
 }
 
-// Función para ir al principio de la página
 function goToBeginning() {
   window.scrollTo(0, 0);
 }
 
-// Agregar la función al evento `click` del botón de actualizar
-document
-  .querySelector(".boton-actualizar")
-  .addEventListener("click", goToBeginning);
+const skillBars = document.querySelectorAll(".barra-skill");
 
-// Event Listener para cargar el contenido de la página
-document.addEventListener("DOMContentLoaded", function () {
-  // Aquí puedes agregar el código que necesitas ejecutar cuando la página se carga
-  // Por ejemplo, podrías inicializar ciertos componentes o realizar alguna acción específica
-  // Agregar la función al evento `click` del botón de actualizar
+skillBars.forEach((skillBar) => {
+  const progreso = skillBar.querySelector(".progreso");
+  const progresoInterno = progreso.querySelector(".progreso-interno");
+  const percentageSpan = progreso.querySelector(".porcent");
+
+  const percentage = parseInt(percentageSpan.textContent.replace("%", ""));
+
+  progresoInterno.style.width = `${percentage}%`;
+  progreso.style.setProperty("--progress-color", percentageSpan.textContent);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const progressBars = document.querySelectorAll('.barra-skill .progreso');
+
+  progressBars.forEach(bar => {
+    const percentage = bar.getAttribute('data-percentage');
+    const innerBar = bar.querySelector('.progreso-interno');
+    innerBar.style.setProperty('--progress-width', `${percentage}%`);
+
+    let color;
+    if (percentage < 25) {
+      color = "#ff0000";
+    } else if (percentage < 50) {
+      color = "#ff8000";
+    } else if (percentage < 90) {
+      color = "#ffff00";
+    } else {
+      color = "#008000";
+    }
+    bar.style.setProperty("--progress-color", color);
+  });
+
   document
     .querySelector(".boton-actualizar")
     .addEventListener("click", goToBeginning);
